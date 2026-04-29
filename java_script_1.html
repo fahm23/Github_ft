@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas 1 - JavaScript</title>
+</head>
+
+<body>
+
+    <h2>Hasil Perhitungan Luas</h2>
+    <p id="output"></p>
+
+    <script>
+        // code untuk menghitung luas persegi
+        // Rumus: sisi * sisi
+        function luasPersegi(sisi) {
+            return sisi * sisi;
+        }
+
+        // code untuk menghitung luas persegi panjang
+        // Rumus: panjang * lebar
+        function luasPersegiPanjang(panjang, lebar) {
+            return panjang * lebar;
+        }
+
+        // code untuk menghitung luas segitiga
+        // Rumus: 1/2 * alas * tinggi
+        function luasSegitiga(alas, tinggi) {
+            return 0.5 * alas * tinggi;
+        }
+
+        // contoh panjang masing" variabel
+        let sisi = 4;
+        let panjang = 6;
+        let lebar = 3;
+        let alas = 5;
+        let tinggi = 8;
+
+        // menghitung hasil rumus perhitungan
+        let hasilPersegi = luasPersegi(sisi);
+        let hasilPersegiPanjang = luasPersegiPanjang(panjang, lebar);
+        let hasilSegitiga = luasSegitiga(alas, tinggi);
+
+        // Menampilkan hasil         document.getElementById("output").innerHTML =
+            "Luas Persegi: " + hasilPersegi + "<br>" +
+            "Luas Persegi Panjang: " + hasilPersegiPanjang + "<br>" +
+            "Luas Segitiga: " + hasilSegitiga;
+
+        // Juga tampil di console (opsional)
+        console.log("Luas Persegi:", hasilPersegi);
+        console.log("Luas Persegi Panjang:", hasilPersegiPanjang);
+        console.log("Luas Segitiga:", hasilSegitiga);
+    </script>
+
+</body>
+
+</html>
